@@ -1,0 +1,44 @@
+
+redis:
+  host: localhost
+  port: 6379
+  timeout: 10
+  pool-max-wait: 500
+  pool-max-idle: 500
+  pool-max-total: 1000
+
+spring:
+  datasource:
+    username: root
+    password: wuyuanjian0
+    url: jdbc:mysql://localhost:3306/db2?characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  mail:
+    host: smtp.qq.com
+    username: 742056539@qq.com
+    password: dulkfjfercfnbcia
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class:
+              java.net.ssl.SSLSocketFactory
+    port: 587
+  servlet:
+    multipart:
+      max-file-size: 400MB
+      max-request-size: 400MB
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+server:
+  port: 80
+
+
+DBpath: /data/gitee/file
+
+local: http://itaem.cn
